@@ -1,22 +1,24 @@
 <div align="center">
 
-<!-- HERO SECTION -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a8a,50:2563eb,100:10b981&height=200&section=header&text=RationalBloks&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Backend-as-a-Service%20for%20Modern%20Applications&descSize=20&descAlignY=55" />
+# 🚀 RationalBloks
+
+### Backend-as-a-Service for Modern Applications
 
 <br />
 
-# 🚀 Upload a JSON schema. Get a production API in 2 minutes.
+## Upload a JSON schema. Get a production API in 2 minutes.
 
-**We generate a complete FastAPI application with PostgreSQL, JWT auth, and Kubernetes deployment.**<br/>
+We generate a complete **FastAPI application** with PostgreSQL database,<br />
+REST APIs, JWT authentication, and deploy it to Kubernetes automatically.<br />
 **No backend code. No DevOps. Just define your data and ship.**
 
 <br />
 
-[![Try It Free](https://img.shields.io/badge/🚀_TRY_IT_FREE-rationalbloks.com-10b981?style=for-the-badge&labelColor=064e3b)](https://rationalbloks.com)
-&nbsp;
-[![View Docs](https://img.shields.io/badge/📚_DOCUMENTATION-Read_the_Docs-3b82f6?style=for-the-badge&labelColor=1e3a8a)](https://rationalbloks.com/documentation)
-&nbsp;
-[![Pricing](https://img.shields.io/badge/💰_PRICING-From_€7/mo-f59e0b?style=for-the-badge&labelColor=92400e)](https://rationalbloks.com/billing)
+[<img src="https://img.shields.io/badge/🚀%20TRY%20IT%20FREE-rationalbloks.com-10b981?style=for-the-badge" />](https://rationalbloks.com)
+&nbsp;&nbsp;&nbsp;
+[<img src="https://img.shields.io/badge/📚%20DOCUMENTATION-Read%20the%20Docs-3b82f6?style=for-the-badge" />](https://rationalbloks.com/documentation)
+&nbsp;&nbsp;&nbsp;
+[<img src="https://img.shields.io/badge/💰%20PRICING-From%20€7%2Fmo-f59e0b?style=for-the-badge" />](https://rationalbloks.com/billing)
 
 </div>
 
@@ -24,157 +26,154 @@
 
 ---
 
-<div align="center">
+<br />
 
 ## ⚡ How It Works
 
-</div>
+<br />
 
-<table>
-<tr>
-<td width="33%" align="center">
+### Step 1: Define Your Data Model
 
-<img src="https://img.shields.io/badge/STEP_1-DEFINE-667eea?style=for-the-badge" />
-
-### 📝 Write Your Schema
+Write a simple JSON schema describing your tables and fields:
 
 ```json
 {
   "products": {
-    "name": { "type": "string" },
-    "price": { "type": "decimal" },
-    "stock": { "type": "integer" }
+    "name": { "type": "string", "required": true },
+    "price": { "type": "decimal", "required": true },
+    "stock": { "type": "integer", "default": 0 },
+    "is_active": { "type": "boolean", "default": true }
+  },
+  "orders": {
+    "user_id": { "type": "uuid", "foreign_key": "app_users.id" },
+    "product_id": { "type": "uuid", "foreign_key": "products.id" },
+    "quantity": { "type": "integer", "required": true },
+    "total": { "type": "decimal", "required": true },
+    "status": { "type": "string", "default": "pending" }
   }
 }
 ```
 
-*Just JSON. That's it.*
+<br />
 
-</td>
-<td width="33%" align="center">
+### Step 2: We Generate & Deploy Everything
 
-<img src="https://img.shields.io/badge/STEP_2-GENERATE-f59e0b?style=for-the-badge" />
+Upload your schema and we automatically:
 
-### ⚙️ We Build Everything
+| What We Generate | Description |
+|------------------|-------------|
+| ✅ **FastAPI Application** | Complete Python backend with all CRUD endpoints |
+| ✅ **SQLAlchemy Models** | Database models with relationships and constraints |
+| ✅ **PostgreSQL Database** | Production database provisioned and configured |
+| ✅ **Alembic Migrations** | Schema changes automatically generate migrations |
+| ✅ **JWT Authentication** | Login, register, password reset, Google OAuth |
+| ✅ **Row-Level Security** | Users only access their own data automatically |
+| ✅ **Docker Image** | Containerized and pushed to registry |
+| ✅ **Kubernetes Deployment** | Deployed with auto-scaling and health checks |
+| ✅ **SSL Certificates** | HTTPS configured automatically |
 
-```
-✅ FastAPI app generated
-✅ SQLAlchemy models
-✅ PostgreSQL database
-✅ Alembic migrations
-✅ JWT authentication
-✅ Docker + Kubernetes
-```
+<br />
 
-*Fully automated.*
+### Step 3: Your Production API is Live
 
-</td>
-<td width="33%" align="center">
-
-<img src="https://img.shields.io/badge/STEP_3-SHIP-10b981?style=for-the-badge" />
-
-### 🚀 Your API is Live
+Your API is ready to use immediately:
 
 ```
-POST   /api/products
-GET    /api/products
-GET    /api/products/{id}
-PUT    /api/products/{id}
-DELETE /api/products/{id}
+🟢 POST   https://yourapp.rationalbloks.com/api/products      → Create
+🟢 GET    https://yourapp.rationalbloks.com/api/products      → List all
+🟢 GET    https://yourapp.rationalbloks.com/api/products/{id} → Get one
+🟢 PUT    https://yourapp.rationalbloks.com/api/products/{id} → Update
+🟢 DELETE https://yourapp.rationalbloks.com/api/products/{id} → Delete
 ```
 
-*Production-ready.*
-
-</td>
-</tr>
-</table>
+Plus full Swagger/OpenAPI documentation at `/docs`.
 
 <br />
 
 ---
 
-<div align="center">
-
-## 🛠️ Everything Included
-
-</div>
-
 <br />
 
-<table>
-<tr>
-<td width="50%">
+## 🛠️ Complete Feature Set
+
+<br />
 
 ### 🔧 Code Generation Engine
-Complete FastAPI applications auto-generated from your JSON schema. SQLAlchemy models, CRUD endpoints, Pydantic validation—all created automatically.
+- Complete FastAPI applications generated from JSON schemas
+- SQLAlchemy ORM models with proper relationships
+- Pydantic validation for all request/response models
+- Automatic CRUD endpoints for every table
+- OpenAPI/Swagger documentation generated automatically
 
-### 🗄️ Database + Migrations
-PostgreSQL provisioned automatically. Alembic migrations generated when you update your schema. Zero manual SQL.
+### 🗄️ Database & Migrations
+- PostgreSQL database provisioned automatically
+- Alembic migrations generated when you update your schema
+- Foreign key relationships handled automatically
+- Indexes and constraints applied from schema
+- Zero manual SQL required
+
+### 🔐 Authentication & Security
+- JWT token-based authentication built into every API
+- Google OAuth integration ready to use
+- Secure password hashing with bcrypt
+- Role-based access control support
+- Row-level security: users only see their own data
 
 ### 🚀 Production Infrastructure
-Kubernetes deployment with auto-scaling, health checks, SSL certificates, and zero-downtime updates.
+- Kubernetes deployment with auto-scaling
+- Health checks and automatic restarts
+- Zero-downtime deployments
+- SSL/HTTPS certificates configured automatically
+- Staging and production environments
 
-</td>
-<td width="50%">
-
-### 🔐 Built-in Authentication
-JWT tokens, Google OAuth, secure password hashing, and role-based access control. Every API ships with auth.
-
-### 🛡️ Enterprise Security
-Encrypted databases, isolated deployments, row-level security. SOC2-ready infrastructure from day one.
-
-### 📊 Real-time Dashboard
-Monitor API performance, track usage patterns, view system health. Built-in analytics for every project.
-
-</td>
-</tr>
-</table>
+### 📊 Dashboard & Monitoring
+- Real-time API performance metrics
+- Request/response logging
+- Error tracking and alerts
+- Usage analytics per endpoint
+- System health monitoring
 
 <br />
 
 ---
 
-<div align="center">
+<br />
 
-## 💡 Why RationalBloks?
+## 💡 Why Developers Choose RationalBloks
 
 <br />
 
-| Without RationalBloks | With RationalBloks |
-|:---------------------:|:------------------:|
-| ⏰ Weeks building backend | ⚡ **2 minutes** |
-| 😩 Write boilerplate code | 🎯 **Just JSON schema** |
-| 🔧 Configure servers | ☁️ **Auto-deployed** |
-| 🤯 Manage infrastructure | 😎 **We handle it** |
+| The Old Way | The RationalBloks Way |
+|-------------|----------------------|
+| ⏰ Weeks writing backend code | ⚡ **2 minutes** to production |
+| 📝 Hundreds of lines of boilerplate | 📄 **Just a JSON file** |
+| 🔧 Configure servers and databases | ☁️ **Fully managed infrastructure** |
+| 🔐 Implement auth from scratch | 🔑 **Auth included automatically** |
+| 🚀 Set up CI/CD pipelines | 🎯 **One-click deploy** |
+| 💸 Pay for DevOps expertise | 💰 **Starts at €7/month** |
 
 <br />
-
-</div>
 
 ---
 
+<br />
+
 <div align="center">
 
-<br />
-
-## 🎯 Ready to Ship 10x Faster?
-
-<br />
-
-[![GET STARTED FREE](https://img.shields.io/badge/🚀_GET_STARTED_FREE-rationalbloks.com-1e40af?style=for-the-badge&labelColor=1e3a8a)](https://rationalbloks.com)
-
-<br />
+## 🎯 Ready to Ship Your Backend in 2 Minutes?
 
 **Stop writing boilerplate. Start building your product.**
 
 <br />
 
+[<img src="https://img.shields.io/badge/🚀%20GET%20STARTED%20FREE-rationalbloks.com-1e40af?style=for-the-badge" />](https://rationalbloks.com)
+
+<br />
+
 ---
 
 <br />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3a8a,50:2563eb,100:10b981&height=100&section=footer" />
-
-<sub>Built with ❤️ by **Victor Veloso** · Portugal 🇵🇹</sub>
+**Built by Victor Veloso** · Portugal 🇵🇹
 
 </div>
