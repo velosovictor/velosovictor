@@ -22,15 +22,9 @@ REST APIs, JWT authentication, and deploy it to Kubernetes automatically.<br />
 
 </div>
 
-<br />
-
 ---
 
-<br />
-
 ## ⚡ How It Works
-
-<br />
 
 ### Step 1: Define Your Data Model
 
@@ -54,8 +48,6 @@ Write a simple JSON schema describing your tables and fields:
 }
 ```
 
-<br />
-
 ### Step 2: We Generate & Deploy Everything
 
 Upload your schema and we automatically:
@@ -67,12 +59,10 @@ Upload your schema and we automatically:
 | ✅ **PostgreSQL Database** | Production database provisioned and configured |
 | ✅ **Alembic Migrations** | Schema changes automatically generate migrations |
 | ✅ **JWT Authentication** | Login, register, password reset, Google OAuth |
-| ✅ **Row-Level Security** | Users only access their own data automatically |
+| ✅ **FK-Based Authorization** | Add `user_id → app_users.id` and users only access their own data |
 | ✅ **Docker Image** | Containerized and pushed to registry |
 | ✅ **Kubernetes Deployment** | Deployed with auto-scaling and health checks |
 | ✅ **SSL Certificates** | HTTPS configured automatically |
-
-<br />
 
 ### Step 3: Your Production API is Live
 
@@ -88,15 +78,9 @@ Your API is ready to use immediately:
 
 Plus full Swagger/OpenAPI documentation at `/docs`.
 
-<br />
-
 ---
 
-<br />
-
 ## 🛠️ Complete Feature Set
-
-<br />
 
 ### 🔧 Code Generation Engine
 - Complete FastAPI applications generated from JSON schemas
@@ -112,12 +96,12 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 - Indexes and constraints applied from schema
 - Zero manual SQL required
 
-### 🔐 Authentication & Security
+### 🔐 Authentication & Authorization
 - JWT token-based authentication built into every API
 - Google OAuth integration ready to use
 - Secure password hashing with bcrypt
-- Role-based access control support
-- Row-level security: users only see their own data
+- **FK-based authorization**: add `foreign_key: "app_users.id"` to any field and users automatically only access their own records
+- Multiple user FKs generate OR-based access (e.g., sender OR receiver can see a message)
 
 ### 🚀 Production Infrastructure
 - Kubernetes deployment with auto-scaling
@@ -137,11 +121,7 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 
 ---
 
-<br />
-
 ## 💡 Why Developers Choose RationalBloks
-
-<br />
 
 | The Old Way | The RationalBloks Way |
 |-------------|----------------------|
@@ -152,11 +132,7 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 | 🚀 Set up CI/CD pipelines | 🎯 **One-click deploy** |
 | 💸 Pay for DevOps expertise | 💰 **Starts at €7/month** |
 
-<br />
-
 ---
-
-<br />
 
 <div align="center">
 
@@ -164,16 +140,10 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 
 **Stop writing boilerplate. Start building your product.**
 
-<br />
-
 [<img src="https://img.shields.io/badge/🚀%20GET%20STARTED%20FREE-rationalbloks.com-1e40af?style=for-the-badge" />](https://rationalbloks.com)
-
-<br />
 
 ---
 
-<br />
-
-**Built by Victor Veloso** · Portugal 🇵🇹
+**Built with precision by Victor Veloso**
 
 </div>
