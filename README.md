@@ -3,12 +3,8 @@
 # RationalBloks
 
 ### The Industrial Powerhouse of Backend Infrastructure
-
 <br />
-
-## Upload a JSON schema. Get a production API in 2 minutes.
-
-<br />
+### Upload a JSON schema. Get a production API in 2 minutes.
 
 </div>
 
@@ -122,6 +118,7 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
 
 
 
