@@ -12,8 +12,6 @@
 
 </div>
 
----
-
 ## How It Works
 
 ### Step 1: Define Your Data Model
@@ -111,19 +109,6 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 
 ---
 
-## 💡Why Developers Choose RationalBloks
-
-| The Old Way | The RationalBloks Way |
-|-------------|----------------------|
-| Weeks writing backend code | **2 minutes** to production |
-| Hundreds of lines of boilerplate | **Just a JSON file** |
-| Configure servers and databases | **Fully managed infrastructure** |
-| Implement auth from scratch | **Auth included automatically** |
-| Set up CI/CD pipelines | **One-click deploy** |
-| Pay for DevOps expertise | **Starts at €7/month** |
-
----
-
 <div align="center">
 
 ## 🎯 Ready to Ship Your Backend in 2 Minutes?
@@ -137,6 +122,7 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
 
 
 
