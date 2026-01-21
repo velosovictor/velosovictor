@@ -2,7 +2,7 @@
 
 # 🚀 RationalBloks
 
-### Backend-as-a-Service for Modern Applications
+### The Industrial Powerhouse of Backend Infrastructure
 
 <br />
 
@@ -147,3 +147,4 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
