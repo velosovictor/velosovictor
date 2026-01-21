@@ -92,13 +92,6 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 - SSL/HTTPS certificates configured automatically
 - Staging and production environments
 
-### 📊 Dashboard & Monitoring
-- Real-time API performance metrics
-- Request/response logging
-- Error tracking and alerts
-- Usage analytics per endpoint
-- System health monitoring
-
 <br />
 
 ---
@@ -116,6 +109,7 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
 
 
 
