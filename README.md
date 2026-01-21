@@ -8,17 +8,7 @@
 
 ## Upload a JSON schema. Get a production API in 2 minutes.
 
-We generate a complete **FastAPI application** with PostgreSQL database,<br />
-REST APIs, JWT authentication, and deploy it to Kubernetes automatically.<br />
-**No backend code. No DevOps. Just define your data and ship.**
-
 <br />
-
-[<img src="https://img.shields.io/badge/🚀%20TRY%20IT%20FREE-rationalbloks.com-10b981?style=for-the-badge" />](https://rationalbloks.com)
-&nbsp;&nbsp;&nbsp;
-[<img src="https://img.shields.io/badge/📚%20DOCUMENTATION-Read%20the%20Docs-3b82f6?style=for-the-badge" />](https://rationalbloks.com/documentation)
-&nbsp;&nbsp;&nbsp;
-[<img src="https://img.shields.io/badge/💰%20PRICING-From%20€7%2Fmo-f59e0b?style=for-the-badge" />](https://rationalbloks.com/billing)
 
 </div>
 
@@ -121,16 +111,16 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 
 ---
 
-## 💡 Why Developers Choose RationalBloks
+## 💡Why Developers Choose RationalBloks
 
 | The Old Way | The RationalBloks Way |
 |-------------|----------------------|
-| ⏰ Weeks writing backend code | ⚡ **2 minutes** to production |
-| 📝 Hundreds of lines of boilerplate | 📄 **Just a JSON file** |
-| 🔧 Configure servers and databases | ☁️ **Fully managed infrastructure** |
-| 🔐 Implement auth from scratch | 🔑 **Auth included automatically** |
-| 🚀 Set up CI/CD pipelines | 🎯 **One-click deploy** |
-| 💸 Pay for DevOps expertise | 💰 **Starts at €7/month** |
+| Weeks writing backend code | **2 minutes** to production |
+| Hundreds of lines of boilerplate | **Just a JSON file** |
+| Configure servers and databases | **Fully managed infrastructure** |
+| Implement auth from scratch | **Auth included automatically** |
+| Set up CI/CD pipelines | **One-click deploy** |
+| Pay for DevOps expertise | **Starts at €7/month** |
 
 ---
 
@@ -147,5 +137,6 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
 
 
