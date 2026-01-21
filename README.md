@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 RationalBloks
+# RationalBloks
 
 ### The Industrial Powerhouse of Backend Infrastructure
 
@@ -24,7 +24,7 @@ REST APIs, JWT authentication, and deploy it to Kubernetes automatically.<br />
 
 ---
 
-## ⚡ How It Works
+## How It Works
 
 ### Step 1: Define Your Data Model
 
@@ -147,4 +147,5 @@ Plus full Swagger/OpenAPI documentation at `/docs`.
 **Built with precision by Victor Veloso**
 
 </div>
+
 
